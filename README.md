@@ -1,11 +1,9 @@
 # CLASE JS - OPERADORES Y TIPOS DE DATOS
 
-
-/*
-* Tipos de datos
+##Tipos de datos
 *
-* Tipado dinamico: pueden en tiempos de
-* ejecucion.
+* Tipado dinámico: pueden en tiempos de
+* ejecución.
 * Es decir, que los puedo una variable que
 * tenia un tipo de dato string a otro por
 * ejemplo entero
@@ -21,7 +19,7 @@ let edad = `15`
 // Enteros (number)
 let entero = 10 // 0.15, -55, 3.14
 
-// Boleanos (boolean)
+// Booleanos (boolean)
 let verdadero = true
 let falso = false
 
@@ -61,10 +59,10 @@ const PI = 3.14
 
 // PI = 1 !No se puede reasignar
 
-'Continua ejecucion'
+'Continua ejecución'
 'HERE'
 
-// Estructuras o coleciones de datos
+// Estructuras o colecciones de datos
 let alumnos = ['Alexis', 'Miguel', 'Francisco']
 console.log(alumnos[0])
 typeof alumnos
@@ -98,7 +96,7 @@ persona.nombre
 //Operadores
 
 
-// Asignacion
+// Asignación
 
 let edad2 = 29
 edad2
