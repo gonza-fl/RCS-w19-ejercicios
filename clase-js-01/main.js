@@ -19,19 +19,33 @@ let c;
 c = "Hola JS";
 console.log(c);
 
-//Usar operadores (aritméticos, de asignación, etc.)
-//Operadores
+//Usar operadores 
+//Operadores Aritméticos
 let a = 10;
 let b = 2;
 
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
+console.log(a + b); //Suma
+console.log(a - b); //Resta 
+console.log(a * b); //Multiplicación
+console.log(a / b); //Division
+console.log(a % b) //Modulo
+console.log(a ** b) //Exponente 
 
-let variablearitmetica = 5;
-variablearitmetica += 2;
-console.log(variablearitmetica);
+//Operadores de Asignación
+let variableAritmética = 5;
+console.log(variableAritmética)
+variableAritmética +=2 //Suma 5 + 2
+console.log(variableAritmética)
+variableAritmética -=4 //Resta 7 - 4
+console.log(variableAritmética)
+variableAritmética *=2
+console.log(variableAritmética)
+variableAritmética /=3
+console.log(variableAritmética)
+variableAritmética %=3
+console.log(variableAritmética)
+variableAritmética **=3
+console.log(variableAritmética)
 
 /*
 "let" es un tipo de variable a la cual
