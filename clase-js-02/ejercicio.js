@@ -12,12 +12,12 @@ if (nombre === "Messi") {
   if (edad > 18) {
     console.log(`${nombre} tiene ${edad} años. Acceso permitido✅`);
   } else if (edad === 18) {
-    if(tieneDNI) {
-      console.log(`${nombre} tiene ${edad} años. Acceso permitido con DNI  🪪 `)
+    if (tieneDNI) {
+      console.log(`${nombre} tiene ${edad} años. Acceso permitido con DNI  🪪 `);
     } else {
-    console.log(`${nombre} tiene ${edad} años. Acceso denegado 🚫`);
-    } 
+      console.log(`${nombre} tiene ${edad} años. Acceso denegado 🚫`);
+    }
   } else {
-    console.log(`${nombre} tiene ${edad} años. Acceso denegado 🚫`)
+    console.log(`${nombre} tiene ${edad} años. Acceso denegado 🚫`);
   }
 }
