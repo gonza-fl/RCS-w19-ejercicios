@@ -6,7 +6,7 @@ Practicar el uso de **if / else** y **operadores de comparación** (`>`, `<`, `>
 ---
 
 ## 📋 Consigna general
-Cada alumno debe crear su rama (por ejemplo `mi-nombre`) dentro de la carpeta `clase02/` y resolver los siguientes ejercicios.
+Cada alumno debe crear su rama (por ejemplo `mi-nombre`) dentro de la carpeta `ejercicio2/` y resolver los siguientes ejercicios.
 
 ---
 
@@ -39,7 +39,7 @@ Además:
 2. Usar **if / else if / else** para mostrar en consola:
 
    * `"✅ Acceso permitido"` si tiene más de 18 años.
-   * `"🪪 Acceso permitido con DNI"` si tiene 18 años y `tieneDNI` es `true`.
+   * `"💳 Acceso permitido con DNI"` si tiene 18 años y `tieneDNI` es `true`.
    * `"🚫 Acceso denegado"` si tiene menos de 18 o no cumple las condiciones.
    * Y además los **mensajes especiales** de arriba (`Messi` / `RollingBot`).
 
@@ -72,12 +72,12 @@ Además:
 
 ## 🧱 Entrega
 
-1. Crear el archivo `grupoX.js` dentro de `clase02/`.
+1. Crear el archivo `ejercicio2.js` dentro de `ejercicio2/`.
 
 2. Hacer commit con un mensaje:
 
    ```
-   feat: - Clase 02 - if/else y comparadores
+   feat: - Ejercicio2 - if/else y comparadores
    ```
 
-3. Push y **Pull Request** asignando a `@tuusuario` como reviewer.
+3. Push y **Pull Request** asignando a `@gonza-fl` como reviewer.
