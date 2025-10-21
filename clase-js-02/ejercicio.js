@@ -1,7 +1,7 @@
 //* Control de acceso del club Rolling Code
 
 let nombre = "Luciano";
-let edad = 17;
+let edad = 2;
 let tieneDNI = true;
 
 if (nombre === "Messi") {
@@ -17,7 +17,7 @@ if (nombre === "Messi") {
     } else {
       console.log(`${nombre} tiene ${edad} años. Acceso denegado 🚫`);
     }
-  } else {
+  } else if (edad < 18) {
     console.log(`${nombre} tiene ${edad} años. Acceso denegado 🚫`);
   }
 }
