@@ -4,11 +4,11 @@ let nombre = "Luciano";
 let edad = 2;
 let tieneDNI = true;
 //* Datos Usuario 1
-let nombreUsuario1 = prompt("Ingrese su nombre Usuario 1")
-let edadUsuario1 = prompt("Ingrese su edad Usuario 1")
+let nombreUsuario1 = prompt("Ingrese su nombre Usuario 1");
+let edadUsuario1 = prompt("Ingrese su edad Usuario 1");
 //* Datos Usuario 2
-let nombreUsuario2 = prompt("Ingrese su nombre Usuario 2")
-let edadUsuario2 = prompt("Ingrese su edad Usuario 2")
+let nombreUsuario2 = prompt("Ingrese su nombre Usuario 2");
+let edadUsuario2 = prompt("Ingrese su edad Usuario 2");
 
 if (nombre === "Messi") {
   console.log("Bienvenido, GOAT. 🟢");
@@ -31,10 +31,10 @@ if (nombre === "Messi") {
 if (edadUsuario1 > edadUsuario2) {
   alert(`${nombreUsuario1} es mayor que ${nombreUsuario2}`);
   console.log(`${nombreUsuario1} es mayor que ${nombreUsuario2}`);
-}else if (edadUsuario1 < edadUsuario2){
+} else if (edadUsuario1 < edadUsuario2) {
   alert(`${nombreUsuario1} es menor que ${nombreUsuario2}`);
   console.log(`${nombreUsuario1} es menor que ${nombreUsuario2}`);
-}else {
+} else {
   alert(`${nombreUsuario1} tienes la misma edad que ${nombreUsuario2}`);
   console.log(`${nombreUsuario1} tienes la misma edad que ${nombreUsuario2}`);
 }
