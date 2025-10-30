@@ -6,5 +6,7 @@ if(usuarioEdad) {
 
 let usuarioNombre = prompt('Ingrese su apellido');
 
+alert('hola mundo ' + usuarioEdad)
+
 console.log(usuarioNombre)
 
