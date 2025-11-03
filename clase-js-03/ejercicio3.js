@@ -1,0 +1,29 @@
+//* 🧩 Ejercicio 3: "Login simplificado"
+/*
+Pedí prompt para usuario y contraseña.
+Condición de acceso (con comparaciones y &&):
+Si coincide usuario y contraseña, alert("Bienvenido/a").
+Si el usuario es "invitado" (exacto) y la contraseña está vacía o es falsy, alert("Acceso de invitado").
+En cualquier otro caso, alert("Credenciales inválidas").
+Usá ! para validar la contraseña vacía de invitado.
+*/
+
+let usuario = "Luciano";
+let contraseña = "contraseña";
+
+let nombreUsuario = prompt("Ingrese su nombre Usuario");
+let contraseñaUsuario = prompt("Ingrese su contraseña");
+
+if (nombreUsuario === usuario && contraseña === contraseñaUsuario) {
+  alert("Bienvenido/a");
+} else if (nombreUsuario === "invitado" && !!contraseña) {
+  alert("Acceso de invitado");
+} else {
+  alert("Credenciales inválidas");
+}
+
+let recordarme = null || "si"
+console.log(!!recordarme)
+
+//* Explicación: la variable recordarme muestra en la consola un true porque niega el null al usar !!
+//* !! este doble signo y el || confirman que la variable no esta vacía
