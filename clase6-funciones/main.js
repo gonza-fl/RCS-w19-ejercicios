@@ -59,29 +59,26 @@ contadorInterno++;
 
 console.log(contadorInterno);
 
-let a = 0
-let b = 0
-let op = ''
+let stop = false;
 
-let stop=false
-
-// while (stop == false) {
+while (stop == false) {
   let respuesta = pedirDatos();
-  console.log(respuesta)
+  console.log(respuesta);
+  
   let validados = validarDatosNumericos(respuesta[0], respuesta[1]);
-  console.log(validados)
+  console.log(validados);
   
   if (validados[1] === true) {
     alert('Error. Datos no numericos');
-    // break;
+  } else {
+    let resultado = calcular(validados[0][0], validados[0][1], respuesta[2]);
+    alert(`El resultado es: ${resultado}`);
   }
-  // let resulado = calcular(validados);
-  // alert(resulado);
-  // if(prompt('Parar -> 1') === '1')
-  // {
-  //   stop = true;
-  // }
-// }
+  
+  if (prompt('¿Desea continuar? (1 para salir, Enter para continuar)') === '1') {
+    stop = true;
+  }
+}
 
 function validarDatosNumericos(a, b) {
   let resultado = '';
@@ -111,7 +108,11 @@ function calcular(n, n2, op) {
       resultado = n * n2;
       break;
     case '/':
-      resultado = n / n2;
+      if (n2 === 0) {
+        resultado = 'Error. No se puede dividir por cero';
+      } else {
+        resultado = n / n2;
+      }
       break;
     default:
       resultado = 'Error. Operador no valido';
