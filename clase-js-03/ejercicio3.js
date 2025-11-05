@@ -9,21 +9,22 @@ Usá ! para validar la contraseña vacía de invitado.
 */
 
 let usuario = "Luciano";
-let contraseña = "contraseña";
+let password = "contraseña";
 
 let nombreUsuario = prompt("Ingrese su nombre Usuario");
-let contraseñaUsuario = prompt("Ingrese su contraseña");
+let passwordUsuario = prompt("Ingrese su contraseña");
 
-if (nombreUsuario === usuario && contraseña === contraseñaUsuario) {
+if (nombreUsuario === usuario && password === passwordUsuario) {
   alert("Bienvenido/a");
-} else if (nombreUsuario === "invitado" && !!contraseña) {
+} else if (nombreUsuario === "invitado" && !!password) {
   alert("Acceso de invitado");
 } else {
   alert("Credenciales inválidas");
 }
 
+//* Extra
 let recordarme = null || "si"
 console.log(!!recordarme)
 
 //* Explicación: la variable recordarme muestra en la consola un true porque niega el null al usar !!
-//* !! este doble signo y el || confirman que la variable no esta vacía
+//* !! este doble signo convierte a boolean real y el || (or) significa que puede ser null o si

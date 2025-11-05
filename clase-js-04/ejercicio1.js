@@ -10,4 +10,3 @@ while (t >= 0) {
   t = t - 1;
 }
 console.log("¡Despegue! 🚀");
-
