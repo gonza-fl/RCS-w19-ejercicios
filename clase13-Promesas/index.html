@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promesas</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        background-color: #241b2f;
+      }
+    </style>
+  </head>
+  <body class="text-white">
+    <div class="container d-flex justify-content-center mt-5">
+      <button type="button" class="btn btn-outline-primary" onclick="addParrafo()">Button</button>
+    </div>
+
+    <script>
+      let response = null;
+
+      let body = document.getElementsByTagName('body')[0];
+
+      function addParrafo () {
+        body.innerHTML += 'response BTN: ' + response;
+        body.innerHTML += '<br>';
+      };
+
+      body.innerHTML += 'response: ' + response;
+      body.innerHTML += '<br>';
+
+      const obtenerDato = new Promise(function (resolve, reject) {
+        let status = 2;
+
+        setTimeout(
+          () => {
+            if (status == 2) resolve('hola mundo');
+            else reject('Error.' + status);
+          }  
+        ,5000)
+      });
+
+      obtenerDato.then((data) => {
+        response = data;
+        // body.innerHTML += 'response 999: ' + response;
+        // body.innerHTML += '<br>';
+      });
+
+      body.innerHTML += 'response 2: ' + response;
+      body.innerHTML += '<br>';
+      body.innerHTML += 'response 3: ' + response;
+      body.innerHTML += '<br>';
+      body.innerHTML += 'response 4: ' + response;
+      body.innerHTML += '<br>';
+      body.innerHTML += 'response 5: ' + response;
+      body.innerHTML += '<br>';
+    </script>
+  </body>
+</html>
